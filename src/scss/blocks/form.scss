@@ -1,0 +1,57 @@
+.form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &__label {
+        display: flex;
+
+        justify-content: space-between;
+        
+    }
+
+    &__field {
+        padding: 1rem 0;
+        
+
+    }
+    &__input-radio:checked + &__label-radio-custom{
+        background-color: rgb(183, 177, 209);
+
+    }
+    &__input-radio{
+        display: none;
+    }
+    &__field-custom{
+        display: inline;
+        padding: 0.3rem;
+    }
+    &__field-checkbox{
+        display: inline;
+    }
+    &__label-checkbox-toggle{
+        background-color: rgb(182, 182, 182);
+        display: block;
+        width: 80px;
+        height: 40px;
+        border-radius: 20px;
+
+        &::before{
+        content: '';
+        background-color: rgb(255, 246, 246);
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        }
+   
+    }
+    &__input-checkbox-toggle{
+        display: none;
+    }
+    
+}
+
+.textarea {
+    resize: none;
+    
+}
